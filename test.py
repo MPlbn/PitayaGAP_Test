@@ -2,11 +2,15 @@ import matplotlib.pyplot as plt
 import Utils
 import csv
 
-with open("data/dioda2fast.csv", newline="") as file:
+with open("data/dioda1fast.csv", newline="") as file:
     reader = csv.reader(file, delimiter=';')
     next(reader)  # pomija nagłówek
 
     data = [[float(value) for value in row] for row in reader]
+
+## for fast:
+    data = [[value * 1000 for value in row] for row in data]
+##end for fast
 
 x = [row[0] for row in data]
 y = [row[1] for row in data]

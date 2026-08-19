@@ -15,7 +15,7 @@ def filterIN1(uDataSet, uThreshold=20):
 
 
 
-def filterIN2(uDataSet, uThreshold=30):
+def filterIN2(uDataSet, uThreshold=10):
     i = 1
     counter = 0
     while(i < len(uDataSet) - 2):

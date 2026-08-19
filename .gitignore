@@ -1,0 +1,9 @@
+__pycache__/
+venv/
+tests/
+*.csv
+*.wav
+*.tdsm
+*.txt
+*.log
+*.bin
